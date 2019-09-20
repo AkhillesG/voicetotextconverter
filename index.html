@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Controlled Notes App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h3>Voice Controlled Notes App By <a href="https://www.instagram.com/achilles_efue/"><u><b>ACHILLES G.</b></u></a></h3>
+        <p class="page-description">My tiny app that allows you to take notes by recording your voice</p>
+        <p><a class="tz-link" href="https://greatergem.home.blog">Click to see and get more beautiful applications »</a>
+        </p>
+        <h5>Follow Us On:</h5>
+        <button id="facebook" class="socialMedia" ><i class="fa fa-facebook"></i><i class="fa fa-cog fa-spin"></i></button>
+        <button id="linkedin" class="socialMedia" ><i class="fa fa-linkedin-square"></i><i class="fa fa-cog fa-spin"></i></button>
+        <button id="instagram" class="socialMedia" ><i class="fa fa-instagram"></i><i class="fa fa-cog fa-spin"></i></button>
+        <button id="twitter" class="socialMedia" ><i class="fa fa-twitter"></i><i class="fa fa-cog fa-spin"></i></button>
+        
+        
+
+
+
+        
+
+        <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In
+            Google Chrome.</h3>
+
+        <div class="app">
+            <h3>Add New Note</h3>
+            <div class="input-single">
+                <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition."
+                    rows="6"></textarea>
+            </div>
+            <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+            <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+            <button id="save-note-btn" title="Save Note">Save Note</button>
+            <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+
+            <h3>My Notes</h3>
+            <ul id="notes">
+                <li>
+                    <p class="no-notes">You don't have any notes.</p>
+                </li>
+            </ul>
+
+
+
+            <div class="words" contenteditable>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Only used for the demos ads. Please ignore and remove. -->
+    <script src="https://greatergem.home.blog" async></script>
+
+</body>
+
+</html>
